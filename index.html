@@ -2,16 +2,8 @@
 <html>
 	<head>
 		<title>Fancify Shamcify</title>
-			<fieldset>
-				<legend> Text </legend>
-				<textarea rows="4" cols="30"></textarea>
-			</fieldset>
-			<fieldset>
-				<legend> Fancify </legend>
-					<button onclick = "helloWorld()"> Bigger! </button>
-					<label><input type="radio" name="style" value="">FancyShmancy</label>
-					<label><input type="radio" name="style" value="">BoringBetty</label>
-			</fieldset>
+
+		<script src="fancifymytext.js"></script>
 		<!-- link to your script file here -->
 		
 	</head>
@@ -19,7 +11,17 @@
 	<body>
 		<h1>Fancify my Text</h1>
 		
-
+		<fieldset>
+			<legend> Text </legend>
+			<textarea id = "textarea" rows="4" cols="30"></textarea>
+		</fieldset>
+		<fieldset>
+			<legend> Fancify </legend>
+				<button onclick = "getBigger()"> Bigger! </button>
+				<button onclick = "mooTime()"> Moo </button>
+				<label><input type="radio" id = "fancy" name="style" value="FancyShmancy" onclick = "changeStyle()" onchange = "showAlert()">FancyShmancy</label>
+				<label><input type="radio" id = "boring" name="style" value="BoringBetty" onclick = "changeStyle()" onchange = "showAlert()">BoringBetty</label>
+		</fieldset>
 		<!-- Your UI controls go here -->
 		
 	</body>
