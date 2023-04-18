@@ -45,10 +45,6 @@ function showAlert() {
 
         sentences[i] = sentences[i] + "-Moo";
 
-      //var words = sentences[i].split(" ");
-     // words[words.length - 1] = words[words.length - 1] + "-Moo";
-      //sentences[i] = words.join(" ");
-
     }
   
     moodText = sentences.join(".");
